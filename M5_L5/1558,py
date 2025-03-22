@@ -1,0 +1,9 @@
+from collections import Counter
+
+def hesapla(a :list):
+    sayim=Counter(a)
+    return sayim.most_common(1)[0][0]
+
+n=int(input())
+l=[input() for _ in range(n)]
+print(hesapla(l))
